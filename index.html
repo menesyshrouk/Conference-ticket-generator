@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Conf</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+  <div class="mark">
+      <img src="image/logo-mark.svg" alt="mark" width="20px">
+    <h3>Coding Conf</h3>
+  </div>
+    <h1 id="main-heading">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p class="subtitle">
+      Secure your spot at next year's biggest coding conference.
+    </p>
+
+    <form id="ticket-form">
+      <label for="avatar">Upload Avatar</label>
+      <div class="upload-box" onclick="document.getElementById('avatar').click()">
+        
+        <i class="fa-solid fa-upload" style="color: #d05858;"></i>
+        <p> Drag and drop or click to upload</p>
+        <input type="file" id="avatar" accept="image/*" hidden />
+      </div>
+      <small>Upload your photo (JPG or PNG, max size: 500KB).</small>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="example@email.com" required />
+
+      <label for="github">GitHub Username</label>
+      <input type="text" id="github" placeholder="@yourusername" required />
+
+      <button type="submit">Generate My Ticket</button>
+
+    </form>
+    <h2 id="success-message" style="display: none;"></h2>
+
+    <div id="ticket-preview" class="ticket" style="display: none;"></div>
+
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
